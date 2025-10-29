@@ -1,0 +1,35 @@
+ol>li{
+    color:orange;
+    font-size: 30px;
+}
+ul>li{
+    color:brown;
+    font-size: 20px;
+}
+#cell5{
+    background-color: yellow;
+    font-size: 50px;
+}
+.even{
+    background-color: black;
+    color: white;
+}
+.odd{
+    background-color: lightgreen;
+    color:green
+}
+[type="text"]{
+    background-color: lightgreen;
+}
+[type="password"]{
+    background-color: lightblue;
+}
+[type="email"]{
+    background-color:lightcoral;
+}
+[type="submit"]{
+    background-color:lightpink
+}
+[type="button"]{
+    background-color: lightseagreen;
+}

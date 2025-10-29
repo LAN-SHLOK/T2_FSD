@@ -1,0 +1,81 @@
+/*1.Element*/
+div{
+    color:brown;
+    text-align: center;
+}
+/* 2.Universal*/
+*{
+    color:goldenrod;
+}
+/*3.Identity selector #*/
+#Selectors{
+     color:rgb(81, 224, 169);
+}
+div#a{
+    color:skyblue;
+    text-align: center;
+} */
+/*4.Class .*/
+.bgr{
+    background-color: red;
+    color: white;
+}
+.bgp{
+    background-color: pink;
+}
+h1.bgp{
+    background-color: rgba(198, 228, 27, 0.932);
+}
+/*Combinators*/
+
+/*5. Child >*/
+div>p{
+    color:magenta;
+    text-align: right;
+}
+/*6. Descendant space*/
+div p{
+    color:orange;
+    text-align: center;
+}
+
+.demo{
+    background-color: beige;
+    font-size: 40px;
+}
+
+/*7. Attribute selector []*/
+[target]{
+    font-size: large;
+    background-color: silver;
+}
+a[target]{
+    font-size: large;
+    color: silver;
+}
+
+/*8. Grouping*/
+p,div,article{
+    text-align: right;
+}
+
+/*Final priority
+1. Inline(4)
+2. Id(3)
+3. class,attribute,pseudo-class(2)
+4. Element,pseudo-element(1)
+5. universal(0)
+*/
+/*
+    selector           symbol
+(i)element             Element
+(ii)Id                 #
+(iii)class             .
+(iv)Child              selector1>selector2
+(v)Descendant          selector1 space selector2
+(vi)Universal          *
+(vii)Grouping          selector1,selector2
+(viii)psuedo-class     :class
+(ix)psuedo-element     ::element
+
+*/

@@ -1,0 +1,16 @@
+#heading{
+    background-color: hotpink;
+    color:rgb(87, 188, 255);
+    border: 3px solid black;
+     text-align: center;
+}
+body{
+    background-color:burlywood;
+    text-align: left;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    color:rgba(9, 7, 29, 0.493);
+    border-color: rgb(199, 131, 42);
+    border:3px solid #f7b0ab88
+}

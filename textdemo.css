@@ -1,0 +1,21 @@
+h1{
+    color: #ff20ff;
+}
+h2{
+    color:rgb(133,48,93)
+}
+h3{
+    color:hsl(197, 70%, 29%)
+}
+h4{
+    text-align: center;
+    color: rgba(71, 236, 107, 0.911);
+    background-image: -webkit-radial-gradient(rgb(175, 84, 84),rgb(93, 158, 255),#1efff4be);
+}
+p{
+    text-align: justify;
+    display: flex;
+    text-indent:4em;
+    font-size:"3em";
+    text-decoration: blink red;
+}

@@ -1,0 +1,76 @@
+<!-- Use appropriate selector to design given elements
+ 1.In the nested list each child of ul must have color brown and size 20px.Any other sub-item has color orange and size 30px.
+ 2.Given table of 4 rows and three columns even rows have bg color black,color white and odd rows have bg colorlight green and color green.Only cell no 5 has background yellow and font size 50px 
+ 3.Given a form use attribute selector so that each diffrent input has a diffrent bg-color.-->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehnat Mazduri</title>
+    <link href="demo4.css" rel="stylesheet">
+ </head>
+ <body>
+    <h1>List</h1>
+    <br>
+    <ul>
+        <li>Apples
+            <ol>
+                <li>Green
+                    <ol>
+                        <li type="a">High</li>
+                    </ol>
+                </li>
+                <li>Red</li>
+            </ol>
+        </li>
+        <li>Pineapple</li>
+        <li>Dragon
+            <ol type="a">
+                <li>white</li>
+                <li>red</li>
+            </ol>
+        </li>
+    </ul>
+    <br>
+    <h1>Table</h1>
+    <table cellpadding="5" cellspacing="5" border="5" width="50%">
+        <tr class="odd">
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+        <tr class="even">
+            <td>d</td>
+            <td id="cell5">e</td>
+            <td>f</td>
+        </tr>
+        <tr class="odd">
+            <td>g</td>
+            <td>h</td>
+            <td>i</td>
+        </tr>
+        <tr class="even">
+            <td>j</td>
+            <td>k</td>
+            <td>l</td>
+        </tr>
+    </table>
+    <br>
+    <h1>Form</h1>
+    <form>
+        <label id="first">First Name:</label>
+        <input type="text" name="firstname" id="firstname"  >
+        <br><br>
+        <label id="pass">Password:</label>
+        <input type="password" name="pass" id="password">
+        <br><br>
+        <label id="em">Email:</label>
+        <input type="email" name="email" id="email">
+        <br><br>
+        <input type="submit" id="submit" value="Submit">
+        <input id="button" type="button" value="bl">
+    </form>
+ </body>
+ </html>
