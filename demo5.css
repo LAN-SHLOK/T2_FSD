@@ -1,0 +1,21 @@
+h1{
+    color:#fafad2;
+    text-shadow :10px 10px 10px grey;
+    font-size:50px
+}
+#a{
+    color:cadetblue;
+    font-family:"lucida sans","Verdana","arial","serif","sans-serif","monospace","cursive","fantasy";
+    font-weight:100;
+    font-size: small;
+    text-align: justify;
+}
+/*"serif","sans-serif","monospace","cursive","fantasy"- Parents of fonts*/
+#para{
+    text-transform: uppercase;
+    font:oblique small-caption bold large 10 "Verdana"
+}
+#c{
+    font-variant: small-caps;
+    font-style: italic;
+}
