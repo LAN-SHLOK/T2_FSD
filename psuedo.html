@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*1.Pseudo class selector*/
+    h1{
+        background-color: aquamarine;
+    }
+    a:link{
+        color:coral;
+        background-color: blueviolet;
+        font-size: medium;
+    }
+    a:visited{
+        color:red;
+       background-color: aqua;
+       font-size: x-large;
+    }
+    a:hover{
+        font-size: large;
+    }
+    a:active{
+        color:chartreuse;
+        background-color: mediumaquamarine;
+    }
+    body p:nth-child(7){
+        color:green;
+        box-sizing: border-box;
+        text-align: justify;
+    }
+    input:focus{
+        background-color: yellow;
+        color:aqua; 
+    }
+    /*2.pseudo element selector*/
+    p::first-line{color:rebeccapurple}
+    #a::first-line{
+        color:palegoldenrod;
+    }
+    #a::first-letter{
+        color:blue;
+        font-size: 100px;
+    }
+    h1::before{
+        content: "test data";
+        color:plum
+    }
+    h1::after{
+        content: "😒" url("image.png") "chomu";
+        color:plum
+    }
+    p::selection{
+        background-color: chocolate;
+    }
+    ::marker{
+        color: khaki;
+        margin: 20px;
+        font-size: large;
+    }
+    ul,ol{
+        margin: 20px;
+    }
+</style>
+<body>
+    <h1>
+        hello
+    </h1>
+    <a href="##########">link 1</a>
+    <a href="########">link 2</a>
+    <a href="*****">link 3</a>
+    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum deserunt debitis veniam dolorem incidunt perspiciatis, necessitatibus doloribus repellat corrupti deleniti, minus voluptates amet laudantium illo cumque. Culpa iusto soluta asperiores in odit ad voluptatum porro tempora. Commodi at debitis quidem sit laudantium tempora, est repellat deleniti fuga ad aut delectus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod similique voluptatem, necessitatibus, aut maiores, molestias enim voluptate ullam odio inventore quidem unde quo dolor at ex! Voluptates quia accusamus expedita non molestiae odit, dolorem aut repudiandae consectetur cum dolorum amet nesciunt deleniti fuga est numquam enim aliquam exercitationem! Consequatur, iusto?</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ea consequatur quae aspernatur commodi eum tempore placeat quaerat, excepturi culpa repudiandae corporis cumque error saepe dolores. Cum, tempora aperiam fuga dolores, optio eius vero quia dolor quibusdam aliquid repudiandae odit! Libero, nam! Et laboriosam itaque cum tenetur, nisi amet minus.</p></div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, vitae.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, vitae.</p>
+<form>
+    First Name:
+    <input type="text" placeholder="Enter name">    
+</form>
+<p id="a">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus amet, nisi officiis sed, voluptate quam ducimus nobis corporis maiores optio est quos ipsam assumenda! Neque voluptates ea impedit iste. Labore, nihil! Alias ipsum, sed animi voluptate quaerat doloremque laborum aliquid dicta magni ullam cum beatae ipsam ut explicabo ad corporis quos, impedit error. Placeat, eligendi voluptates. Reprehenderit error dicta libero numquam facere veniam cum? Ipsam hic alias maiores iure laborum nemo porro quaerat error accusamus neque numquam quia id sunt, odio similique molestias provident quidem quos quisquam debitis nam eveniet minus repellat. Quas velit sunt impedit reprehenderit molestiae rerum nemo.</p>
+<ol>
+    <li>lama</li>
+    <li>ma ka magarmach</li>
+    <li>Baap ka brahmand</li>
+</ol>
+<ul>
+    <li>grANDMASTI</li>
+    <li>Javani janeman</li>
+    <li>Lauden bhojiyam</li>
+</ul>
+</body>
+</html>
