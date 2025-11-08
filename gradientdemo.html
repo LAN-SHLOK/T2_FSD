@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gc {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .gbox {
+            border: 2px solid rgb(2, 1, 1);
+            height: 200px;
+            width: 200px;
+            border-radius: 15px;
+        }
+
+        #g1:hover {
+            transform: translate(0px, 10px);
+        }
+
+        #g2:hover {
+            /* transform: scaleY(1.05); */
+            transition: all 2s;
+            transform: rotate3d(0, 1, 0, 180deg);
+        }
+
+        #g3:hover {
+            transform: scale(-1.05);
+        }
+
+        #g4:hover {
+            transform: scale(-1.05, -1.06);
+        }
+
+        #g5:hover {
+            transform: skew(4deg, 4deg);
+            box-shadow: -5px -5px 5px black;
+        }
+
+        #g9:hover {
+            transition: all 1s;
+            transform: rotate3d(-1, -1, -1, 360deg);
+        }
+
+        #g1 {
+            background-image: linear-gradient(#00F260, #0575E6);
+        }
+
+        #g2 {
+            background-image: linear-gradient(to right, #f7b733, #fc4a1a);
+        }
+
+        #g3 {
+            background-image: linear-gradient(270deg, #cc5333, #23074d);
+        }
+
+        #g4 {
+            background-image: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9);
+        }
+
+        #g5 {
+            background-image: linear-gradient(#355C7D 10%, #6C5B7B, #C06C84);
+        }
+
+        #g6 {
+            background-image: radial-gradient(#FC466B, #3F5EFB, #23074d, #cc5333);
+        }
+
+        #g7 {
+            background-image: conic-gradient(#1a2a6c, #b21f1f, #fdbb2d, #1a2a6c);
+        }
+
+        #g8 {
+            background-image: conic-gradient(from 180deg, #1a2a6c, #b21f1f, #fdbb2d, #1a2a6c);
+        }
+
+        #g9 {
+            border-radius: 50%;
+            background-image: conic-gradient(#C33764 0deg, #C33764 45deg, #1D2671 45deg, #1D2671 90deg, #003f5c 90deg, #003f5c 135deg, #58508d 135deg, #58508d 180deg, salmon 180deg, salmon 225deg, peachpuff 225deg, peachpuff 270deg, #ff9966 270deg, #ff9966 315deg, #ff5e62 315deg, #ff5e62 360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gc">
+        <div class="gbox" id="g1"></div>
+        <div class="gbox" id="g2"></div>
+        <div class="gbox" id="g3"></div>
+        <div class="gbox" id="g4"></div>
+        <div class="gbox" id="g5"></div>
+        <div class="gbox" id="g6"></div>
+        <div class="gbox" id="g7"></div>
+        <div class="gbox" id="g8"></div>
+        <div class="gbox" id="g9"></div>
+    </div>
+</body>
+
+</html>

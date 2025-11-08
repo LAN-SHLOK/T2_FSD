@@ -1,23 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box{
-            padding: 20px;
-            margin: 10px;
+        .box {
+            padding: 15px;
             border: 2px solid saddlebrown;
             background-color: azure;
+            height: 200px;
+            width: 200px;
+            position: relative;
+        }
+
+        #p1 {
+            /* IF WE GIVE STATIC IN POSITION THERE WILL BW NO EFFECT TO THEM FROM LEFT,RIGHT,TOP AND BOTTOM */
+            position: static;
+            left: 15px;
+        }
+
+        #p2 {
+            position: relative;
+            /* IF WE GIVE POSITION AS RELATIVE THEN IT WILL MOVE ACCORDING TO IT'S OLD POSITION  */
+            left: 300px;
+            bottom: 235px;
+        }
+
+        #c4 {
+            border: 2px solid mediumseagreen;
+            height: 80px;
+            width: 80px;
+            background-color: limegreen;
+            position: absolute;
+            right: 0px;
+            bottom: 0px
+        }
+
+        #p4 {
+            position: absolute;
+            /* IF WE GIVE POSITION AS ABSOLUTE THEN IT WILL MOVE ACCORDING TO IT'S BROWSER POSITION IF HE DON'T HAVE IT'S PARENT AND WE CAN SCROLL THE PAGE */
+            right: 0px;
+            bottom: 0px;
+        }
+
+        /* #p5 {
+            position: fixed;
+            /* It position according to browser and it will always stay in upside of the other boxes */
+            /* top: 50px;
+            left: 100px; */
+        /* }  */
+
+        #p6 {
+            /* padding: 15px; */
+            border: 2px solid saddlebrown;
+            background-color: azure;
+            height: 200px;
+            width: 200px;
+            overflow: auto;
+        }
+        #c6{
+            border: 2px solid rgb(202, 250, 183);
+            background-color: rgb(142, 240, 240);
+            position: sticky;
+            top:0px;
         }
     </style>
 </head>
+
 <body>
     <div class="box" id="p1">hello1</div>
     <div class="box" id="p2">hello2</div>
     <div class="box" id="p3">hello3</div>
-    <div class="box" id="p4">hello4</div>
+    <div class="box" id="p4">
+        <div id="c4">c4</div>hello4
+    </div>
     <div class="box" id="p5">hello5</div>
+    <div id="p6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis possimus alias, voluptates id reiciendis
+        distinctio quaerat enim perspiciatis odio veritatis libero ipsum quisquam odit? Ab id sint rerum accusantium
+        atque quaerat at similique nulla unde. Inventore pariatur tenetur temporibus vero est, obcaecati architecto
+        dolores assumenda fugit, voluptate perferendis sint dolor, dolorum aspernatur! Earum autem sint natus officiis
+        cumque iste repellendus, facilis, dolores quae deserunt a soluta animi voluptate dolore. Natus, porro? Saepe
+        quaerat et suscipit rerum nihil maiores, adipisci dolorum debitis nemo ipsam similique totam quasi distinctio
+        itaque accusamus beatae excepturi recusandae porro magnam minus! Fugiat numquam officiis obcaecati vitae, unde
+        sequi porro consequuntur omnis. Eos enim eveniet corporis, officia accusantium sint earum commodi adipisci alias
+        vel aperiam laboriosam hic suscipit voluptatum, non neque repudiandae nostrum reprehenderit. Pariatur vero culpa
+        dolore. Doloremque nesciunt dolorem ut harum impedit quod numquam aut perferendis vel exercitationem eveniet
+        deleniti atque debitis modi praesentium iure assumenda vero officia earum eligendi maiores, nulla quibusdam!
+        Itaque, culpa nesciunt. Consectetur facere ratione quos illum porro quisquam voluptatibus sequi dolorem
+        laboriosam, molestias temporibus dignissimos quaerat dolores officiis minima voluptate eos perferendis nobis
+        aliquid accusamus deserunt rerum voluptates ad dolore! Placeat officia dolorem illo. Eum voluptatum, illo
+        doloribus debitis vel ipsa quibusdam aliquam? Laborum voluptas, doloremque vel dolorum repellendus, autem ipsa
+        eligendi illo, delectus sapiente cumque? Architecto asperiores ab eaque, quae eius amet fugit temporibus laborum
+        quibusdam animi neque. Aliquid delectus, eligendi ullam, quae quibusdam quos in est nemo doloremque libero,
+        dolore fugit. Alias autem eum sed rerum laudantium exercitationem fugiat, illum voluptate praesentium doloribus
+        quis unde nulla saepe sunt repellendus aliquam modi corporis natus. Velit earum alias sequi officiis, at sint
+        sed vel quam fuga eum placeat, ipsam ut officia qui facilis? Placeat consectetur ipsam praesentium quod minus
+        debitis perferendis aut sunt voluptas unde. Dicta, possimus non? Vitae, ex.
+        <div id="c6">I will stick</div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, et quidem ipsum voluptatum rem minima nemo
+        laboriosam nisi repellat sit sunt, reprehenderit, velit adipisci id. Blanditiis quidem, totam fuga, at mollitia
+        quaerat dolores corporis praesentium vel optio reprehenderit? Labore, omnis maxime optio suscipit voluptatum
+        natus minima placeat non inventore. Pariatur, suscipit dignissimos sint laudantium eveniet commodi sequi,
+        quisquam beatae harum dolore autem cumque laborum, vel vero. Quisquam laboriosam perferendis ipsam ullam
+        recusandae tempora, mollitia quis saepe? Est velit ex voluptatum tempora, facere sequi iste veritatis pariatur
+        alias a, possimus odit adipisci consectetur doloremque voluptatem itaque error, neque officia placeat
+        perferendis repudiandae! Repudiandae beatae nulla quam, veniam labore vel enim. Deserunt, laboriosam ducimus.
+        Corporis error nihil tenetur voluptatem animi nulla, illum laboriosam, similique dolorem quae tempore alias
+        quidem qui est minima porro deleniti quaerat quam at vel provident deserunt doloremque. Alias aperiam deleniti
+        tempore porro tempora? Unde, voluptatibus. Vel aperiam nostrum, aliquam aspernatur odit adipisci hic amet ut
+        exercitationem laudantium ipsa nobis odio, esse libero aut accusamus officia suscipit. Ratione laboriosam
+        pariatur sequi repellendus aliquam. Labore, tempora ad quam debitis aliquam reiciendis delectus iure voluptates,
+        velit et possimus neque, odit repellat similique provident dolores blanditiis facere eius dolorum voluptatum
+        ipsam nisi iusto esse inventore. Voluptatem ducimus omnis quibusdam laborum veritatis dolorum, ad vel inventore,
+        explicabo dolorem unde! Optio, mollitia? Temporibus recusandae necessitatibus accusamus, autem asperiores, ex
+        eum iure alias dolor ullam nostrum non atque voluptate, doloremque magnam repellendus consequatur quis quidem
+        saepe eligendi dolorum qui omnis! Optio voluptatem, odio fugit porro iste quod itaque expedita alias, quam
+        perspiciatis voluptatum eligendi eum delectus. Ipsa et beatae animi expedita blanditiis sed vero perspiciatis
+        aliquid harum necessitatibus illum voluptate maxime nesciunt possimus minus debitis laudantium, amet ex! Eum cum
+        laborum reprehenderit, doloribus dolore vitae maxime quae, aspernatur veritatis tempora eveniet cupiditate,
+        impedit quis perferendis.
+    </div>
 </body>
+
 </html>
+<!-- div#b$.box{hello-$}*5 -->
