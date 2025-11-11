@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 400px;
+            width: 400px;
+            animation: shlok;
+            animation-duration: 5s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-direction: alternate-reverse;
+            background-color: aquamarine;
+            transform: translateX(90deg);
+        }
+        @keyframes shlok {
+            0%{
+                background-color: #3A1C71;
+                transform:translate(0px) rotate(0deg);
+            }
+            25%{
+                background-color: black;
+                transform:translateX(200px)  rotate(90deg);
+            }
+            50%{
+                background-color: chocolate;
+                transform:translate(200px,200px) rotate(180deg);
+            }
+            75%{
+                background-color: yellow;
+                transform: translateY(200px) rotate(270deg);
+            }
+            100%{
+                background-color: yellowgreen;
+                transform: translateX(0px) rotate(360deg);
+            }
+        }
+        h1{
+            position:relative;
+            animation: earnings;
+            animation-duration: 7s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            color:#3A1C71
+        }
+        @keyframes earnings{
+            0%{
+                left:-400px
+            }
+           
+            100%{
+                left:1400px
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+    <h1>Welcome to my website Buy diddys new jailer perfume</h1>
+</body>
+</html>
