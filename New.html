@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #Amazon{
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    color: rgb(231, 121, 17);
+    padding: 10px;
+}
+#Navbar{
+    background-color: black;
+    display: flex;
+    font-size: medium;
+    height: 50px;
+    width: 100%;
+    flex-direction: row;
+    align-content: row;
+    border-radius: 5px;
+    border-color:wheat ;
+    border: 10px;
+    align-items: center;
+    justify-content:center;
+}
+#AboutUs{
+color: aliceblue;
+padding: 10px;
+}
+#Home{
+color: aliceblue;
+padding: 10px;
+}
+#Product{
+color: aliceblue;
+padding: 10px;
+}
+#Contact{
+color: aliceblue;
+padding: 10px;
+}
+#searchbar{
+    display: flex;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    color: #E57373;
+    align-items: center;
+}
+#search-input{
+    text-align: center;
+     border-radius:5px;
+    background-color: mintcream;
+    color: #000;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#button{
+    padding-left: 10px;
+    color: white;
+    background-color:#E57373;
+    border-radius: 5px
+}   
+  #hero-page{
+    height: 1200px;
+    width:100%;
+    background-color: #7e7cff;
+    border-radius:3px;
+    display: flex;
+    justify-content: center;
+  }
+ 
+#card1 {
+    background: #fffbfb;
+    border-radius: 20px;
+    height: 200px;
+    width: 400px;
+    display: flex;
+     position:relative;
+    /* top: px;                                                       */
+}
+ 
+#card2 {
+    background: #fffbfb;
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+  }
+ 
+#card3 {
+    height: 200px;
+    border-radius: 20px;
+    width: 400px;
+    background: #fffbfb;
+  }
+.cardclass {
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.cardclass > div {
+  background: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 30px;
+  width: 150px;
+  text-align: center;
+  font-weight: 600;
+  font-family: Arial, sans-serif;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cardclass > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+    </style>
+</head>
+
+<body>
+    <!--Basic Tags-->
+    <!--Heading Tags-->
+    <header>
+        <div id="Navbar">
+            <a id="Amazon">Amazon</a>
+            <a id="Home">Home</a>
+            <a id="Product">Product</a>
+            <a id="AboutUs"> About Us</a>
+            <a id="Contact">Contact Services</a>
+            <form id="searchbar">
+                <input type="search" id="search-input" name="query" placeholder="Enter your search term">
+                <button id="button" type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <main id="hero-page">
+    <div class="cardclass">
+        <div id="card1">Card 1</div>
+        <div id="card2">Card 2</div>
+        <div id="card3">Card 3</div>
+        <!-- New 6 cards -->
+        <div class="new-card">Card 4</div>
+        <div class="new-card">Card 5</div>
+        <div class="new-card">Card 6</div>
+        <div class="new-card">Card 7</div>
+        <div class="new-card">Card 8</div>
+        <div class="new-card">Card 9</div>
+    </div>
+</main>
+
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
